@@ -3,7 +3,7 @@ document.getElementById('fetchRecipes').addEventListener('click', async() =>{
     const diet = document.getElementById('diet').value;
 
     try{
-        const response = await fetch(`http://localhost:3000/recipes?query=${query}&diet=${diet}`);
+        const response = await fetch(`https://lab5-recipeapp.onrender.com/recipes?query=${query}&diet=${diet}`);
         const data = await response.json();
 
         if(data.results && data.results.length > 0){
