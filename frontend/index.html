@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommender</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black flex flex-col items-center p-8">
+
+    <h1 class="text-3xl font-bold mb-6 text-white">Recipe Recommender</h1>
+
+    <div class="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
+        <label for="query" class="block mb-2 text-gray-700">Enter an ingredient:</label>
+        <input type="text" id="query" name="query" placeholder="e.g., chicken" class="w-full p-2 border rounded mb-4">
+
+        <label for="diet" class="block mb-2 text-gray-700">Dietary Preference (Optional):</label>
+        <input type="text" id="diet" name="diet" placeholder="e.g., vegetarian" class="w-full p-2 border rounded mb-4">
+
+        <button id="fetchRecipes" class="w-full bg-blue-600 hover:bg-blue-700 focus:ring focus:ring-blue-300 text-white p-2 rounded">
+            Get Recipes
+        </button>
+    </div>
+
+    <div id="recipeList" class="mt-6 w-full max-w-3xl grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
