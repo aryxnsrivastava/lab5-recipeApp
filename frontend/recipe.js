@@ -8,7 +8,7 @@ async function fetchRecipeDetails(){
     }
 
     try{
-        const response = await fetch(`http://localhost:3000/recipe/${recipeId}`);
+        const response = await fetch(`https://lab5-recipeapp.onrender.com/recipe/${recipeId}`);
         if(!response.ok){
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
